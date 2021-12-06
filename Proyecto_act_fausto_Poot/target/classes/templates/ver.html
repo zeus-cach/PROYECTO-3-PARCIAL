@@ -3,6 +3,7 @@
 <head th:replace="layout/layout :: head"></head>
 <body>
 
+	
 	<header th:replace="layout/layout :: header"></header>
 
 	<div class="container py-4">
@@ -14,7 +15,7 @@
 				<h4 class="card-title">
 					<a sec:authorize="hasRole('ROLE_ADMIN')" class="btn btn-primary btn-xs"
 						th:href="@{'/factura/form/' + ${cliente.id}}"
-						th:text="'crear factura'"></a>
+						th:text="'crear facturaa'"></a>
 				</h4>
 
 				<img th:if="${#strings.length(cliente.foto) > 0}"
